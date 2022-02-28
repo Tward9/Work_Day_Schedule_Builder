@@ -1,45 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <!-- Display Current Day and time -->
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-      <!-- Create table of working hours -->
-      <!-- Table should color code by past, present, and future -->
-      <!-- clicking table line (event target) allows input of new event -->
-      <!-- save button keeps event text in local storage -->
-      <!-- displays saved data on refresh -->
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <!-- Display Current Day and time -->
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <!-- Create table of working hours -->
+    <table class="table table-bordered time-block">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="th-lg"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>8</td>
+          <td class="eventInfo">
+            <!-- clicking table line (event target) allows input of new event -->
+            <form>
+              <div class="form-group">
+                <label for="thingEight"></label>
+                <input type="text" class="form-control" id="eight">
+              </div>
+            </form>
+          </td>
+          <!-- save button keeps event text in local storage -->
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingNine"></label>
+                <input type="text" class="form-control" id="nine">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingTen"></label>
+                <input type="text" class="form-control" id="ten">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingEleven"></label>
+                <input type="text" class="form-control" id="eleven">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingTwelve"></label>
+                <input type="text" class="form-control" id="twelve">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingOne"></label>
+                <input type="text" class="form-control" id="one">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="eventInfo"><form>
+            <div class="form-group">
+              <label for="thingTwo"></label>
+              <input type="text" class="form-control" id="two">
+            </div>
+          </form></td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingThree"></label>
+                <input type="text" class="form-control" id="three">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingFour"></label>
+                <input type="text" class="form-control" id="four">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingFive"></label>
+                <input type="text" class="form-control" id="five">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="eventInfo">
+            <form>
+              <div class="form-group">
+                <label for="thingSix"></label>
+                <input type="text" class="form-control" id="six">
+              </div>
+            </form>
+          </td>
+          <td><button class="saveBtn">Save</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- row should color code by past, present, and future -->
+        <!-- displays saved data on refresh -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
