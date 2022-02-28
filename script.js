@@ -106,7 +106,7 @@ if (moment().format('HH')<rowNine) {
     $('#rowNine').addClass('present');
     $('#nine').addClass('present');
 }else{
-    $('#rowNINE').addClass('past');
+    $('#rowNine').addClass('past');
     $('#nine').addClass('past');
 }
 if (moment().format('HH')<rowTen) {
