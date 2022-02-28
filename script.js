@@ -67,3 +67,5 @@ $('#six').focusout(function(){
     }
     console.log(six);
 })
+$('#currentDay').text(moment().format('dddd'));
+console.log(moment().format('dddd'));
