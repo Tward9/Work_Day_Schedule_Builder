@@ -1,9 +1,7 @@
 $('saveBtn').on('click', function(event){
     event.preventDefault();
 })
-
 $('input').focusout(function(){
-    console.log("no focus");
     var eight = {
         text: $('#eight').val()
     }
