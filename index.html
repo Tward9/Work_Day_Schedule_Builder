@@ -9,10 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
-    ></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <link rel="stylesheet" href="style.css" />
   <title>Work Day Scheduler</title>
 </head>
@@ -40,7 +37,7 @@
           <td>8</td>
           <td class="eventInfo">
             <!-- clicking table line (event target) allows input of new event -->
-            <form>
+            <form id="formEight">
               <div class="form-group">
                 <label for="thingEight"></label>
                 <input type="text" class="form-control" id="eight">
@@ -53,7 +50,7 @@
         <tr id="rowNine">
           <td>9</td>
           <td class="eventInfo">
-            <form>
+            <form id="formNine">
               <div class="form-group">
                 <label for="thingNine"></label>
                 <input type="text" class="form-control" id="nine">
@@ -65,7 +62,7 @@
         <tr id="rowTen">
           <td>10</td>
           <td class="eventInfo">
-            <form>
+            <form id="formTen">
               <div class="form-group">
                 <label for="thingTen"></label>
                 <input type="text" class="form-control" id="ten">
@@ -77,7 +74,7 @@
         <tr id="rowEleven">
           <td>11</td>
           <td class="eventInfo">
-            <form>
+            <form id="formEleven">
               <div class="form-group">
                 <label for="thingEleven"></label>
                 <input type="text" class="form-control" id="eleven">
@@ -89,7 +86,7 @@
         <tr id="rowTwelve">
           <td>12</td>
           <td class="eventInfo">
-            <form>
+            <form id="formTwelve">
               <div class="form-group">
                 <label for="thingTwelve"></label>
                 <input type="text" class="form-control" id="twelve">
@@ -101,7 +98,7 @@
         <tr id="rowOne">
           <td>1</td>
           <td class="eventInfo">
-            <form>
+            <form id="formOne">
               <div class="form-group">
                 <label for="thingOne"></label>
                 <input type="text" class="form-control" id="one">
@@ -112,18 +109,20 @@
         </tr>
         <tr id="rowTwo">
           <td>2</td>
-          <td class="eventInfo"><form>
-            <div class="form-group">
-              <label for="thingTwo"></label>
-              <input type="text" class="form-control" id="two">
-            </div>
-          </form></td>
+          <td class="eventInfo">
+            <form id="formTwo">
+              <div class="form-group">
+                <label for="thingTwo"></label>
+                <input type="text" class="form-control" id="two">
+              </div>
+            </form>
+          </td>
           <td><button class="saveBtn">Save</button></td>
         </tr>
         <tr id="rowThree">
           <td>3</td>
           <td class="eventInfo">
-            <form>
+            <form id="formThree">
               <div class="form-group">
                 <label for="thingThree"></label>
                 <input type="text" class="form-control" id="three">
@@ -135,7 +134,7 @@
         <tr id="rowFour">
           <td>4</td>
           <td class="eventInfo">
-            <form>
+            <form id="formFour">
               <div class="form-group">
                 <label for="thingFour"></label>
                 <input type="text" class="form-control" id="four">
@@ -147,7 +146,7 @@
         <tr id="rowFive">
           <td>5</td>
           <td class="eventInfo">
-            <form>
+            <form id="formFive">
               <div class="form-group">
                 <label for="thingFive"></label>
                 <input type="text" class="form-control" id="five">
@@ -159,7 +158,7 @@
         <tr id="rowSix">
           <td>6</td>
           <td class="eventInfo">
-            <form>
+            <form id="formSix">
               <div class="form-group">
                 <label for="thingSix"></label>
                 <input type="text" class="form-control" id="six">
@@ -171,7 +170,7 @@
       </tbody>
     </table>
     <!-- row should color code by past, present, and future -->
-        <!-- displays saved data on refresh -->
+    <!-- displays saved data on refresh -->
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
